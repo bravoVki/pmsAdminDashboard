@@ -45,7 +45,7 @@ const Login = () => {
 
   return (
     <>
-      <div className="container mt-5">
+      <div className="container mx-auto ">
         <section className="d-flex justify-content-between">
           <div className="left_data mt-3 pd-3" style={{ width: "100%" }}>
             <h3 className="text-center col-lg-8 mt-5 pt-5">

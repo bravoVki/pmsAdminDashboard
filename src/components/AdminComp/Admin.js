@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import AdHeader from "./AdHeader";
 import Sidebar from "./Sidebar";
-// import RegisteredUsers from "../RegisteredUsers";
+
 import AdHome from "./AdHome";
 
 function Admin() {
@@ -14,7 +14,6 @@ function Admin() {
   };
   const OpenSidebar = () => {
     setOpenSidebarToggle(!openSidebarToggle);
-    // experimenting from here
   };
 
   return (

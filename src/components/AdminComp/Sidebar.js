@@ -19,7 +19,7 @@ function Sidebar({ onTabClick, openSidebarToggle, OpenSidebar }) {
           Admin Dashboard<hr></hr>
         </div>
         <span className="icon close_icon" onClick={OpenSidebar}>
-          X
+          XX
         </span>
       </div>
 

@@ -1,13 +1,14 @@
 import React from "react";
-import {
-  BsFillBellFill,
-  BsFillEnvelopeFill,
-  BsPersonCircle,
-  BsSearch,
-  BsJustify,
-} from "react-icons/bs";
+
+import { BsSearch, BsJustify } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 
 function AdHeader({ OpenSidebar }) {
+  const navigate = useNavigate();
+  const logoutAdmin = () => {
+    localStorage.removeItem("adminloggedin");
+    navigate("/login");
+  };
   return (
     <header className="adheader">
       <div className="menu-icon">
@@ -17,9 +18,9 @@ function AdHeader({ OpenSidebar }) {
         <BsSearch className="icon" />
       </div>
       <div className="header-right">
-        <BsFillBellFill className="icon" />
-        <BsFillEnvelopeFill className="icon" />
-        <BsPersonCircle className="icon" />
+        <button onClick={logoutAdmin} className="btn btn-secondary  ">
+          LogOut
+        </button>
       </div>
     </header>
   );

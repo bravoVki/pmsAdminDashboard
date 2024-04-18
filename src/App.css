@@ -220,6 +220,33 @@ body {
 
 /* End Main  */
 
+/* css fro card and products  */
+.products-container {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  /* grid-template-columns: repeat(4, 1fr); */
+  justify-items: center;
+  padding: 10px;
+}
+img {
+  width: 150px;
+  height: 150px;
+  /* transition: all 0.3s ease; */
+}
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.card-description {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
 /* Medium <= 992px */
 
 @media screen and (max-width: 992px) {

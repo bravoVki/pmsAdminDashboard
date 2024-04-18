@@ -29,10 +29,10 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
         </Route>
-        <Route element={<Anonymous2 />}>
+        {/* <Route element={<Anonymous2 />}>
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
-        </Route>
+        </Route> */}
         {/* error bala url haru lai ho  */}
         <Route path="*" element={<ErrPage />} />
 

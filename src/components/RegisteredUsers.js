@@ -60,10 +60,10 @@ function RegisteredUsers() {
   const handleCloseAddUserModal = () => {
     setShowAddUserModal(false); // Close the modal
   };
-  const logoutAdmin = () => {
-    localStorage.removeItem("adminloggedin");
-    navigate("/login");
-  };
+  // const logoutAdmin = () => {
+  //   localStorage.removeItem("adminloggedin");
+  //   navigate("/login");
+  // };
   const eMail = (user) => {
     const pass = user.password;
     var length = pass.length;
@@ -81,9 +81,9 @@ function RegisteredUsers() {
           >
             AddUser
           </button>
-          <button onClick={logoutAdmin} className="btn btn-primary btn-sm">
+          {/* <button onClick={logoutAdmin} className="btn btn-primary btn-sm">
             LogOut
-          </button>
+          </button> */}
         </div>
         <Table striped bordered hover className="mt-2">
           <thead>

@@ -6,8 +6,8 @@ function AddUserModal({ show, handleClose }) {
     name: "",
     email: "",
     password: "",
-    confirmpassword: "",
-    role: "user", //yo pani save vaira xa yaslai milaunu baaki vo
+    // confirmpassword: "",
+    role: "user",
   });
   const handleSubmit = (e) => {
     e.preventDefault();

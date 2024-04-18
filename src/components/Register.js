@@ -11,7 +11,7 @@ const Register = () => {
     email: "",
     password: "",
     confirmpassword: "",
-    role: "user", //yo pani save vaira xa yaslai milaunu baaki vo
+    role: "user",
   });
   //to store value in localStorage
   const handleSubmit = (e) => {
@@ -41,9 +41,9 @@ const Register = () => {
 
   return (
     <>
-      <div className="container mt-4">
-        <section className="d-flex justify-content-between">
-          <div className="left_data mt-3 pd-3" style={{ width: "100%" }}>
+      <div className="container mt-4 ">
+        <section className="d-flex justify-content-around">
+          <div className="left_data mt-5 pd-3" style={{ width: "100%" }}>
             <h3 className="text-center col-lg-8">User Registration</h3>
             <Form onSubmit={handleSubmit}>
               <Form.Group

@@ -3,11 +3,12 @@ import React from "react";
 const SinImg = () => {
   return (
     <>
-      <div className="right_data mt-5" style={{ width: "100%" }}>
+      <div className="right_data mt-5" style={{ width: "200%" }}>
         <div className="sign_img mt-5">
           <img
+            className="img-fluid"
             src="./sign.jpg"
-            style={{ maxWidth: 500 }}
+            style={{ width: 500 }}
             alt="yaha par aaega"
           />
         </div>
